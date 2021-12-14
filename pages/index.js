@@ -18,7 +18,7 @@ export default function Home() {
 
   return (
     <div className="flex flex-col align-middle justify-center items-center">
-      <h1 className="text-5xl m-7">Busqueda de datos de arranque</h1>
+      <h1 className="text-5xl m-7 font-extrabold">Busqueda de datos de arranque</h1>
       <Head>
         <title>Buscando: {inputValue}</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
