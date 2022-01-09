@@ -4,7 +4,7 @@ export default async function handler(req, res) {
     return new Promise((resolve) => {
         const { id } = req.query;
         var LOGS = [];
-        db.collection('logs').where('owner', '==', id).get().then(snapshot => {
+        db.collection('logs').where('owner', '==', id).get().orderBy('date').then(snapshot => {
             snapshot.forEach(doc => {
                     LOGS.push(
                         {
