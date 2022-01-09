@@ -28,7 +28,7 @@ export default function QueryResults({id}) {
                         return (
                             <tr key={x.rpi}>
                                 <td className='border border-green-600 text-center text-lg'>{x.rpi}</td>
-                                <td className='border border-green-600 text-center text-lg'>{new Date(x.date._seconds * 1000).toDateString()}</td>
+                                <td className='border border-green-600 text-center text-lg'>{new Date(x.date._seconds * 1000).toString()}</td>
                                 <td className='border border-green-600 text-center text-lg'>{x.arranca ? "Ha arrancado" : "No ha arrancado"}</td>
                             </tr>
                         )
