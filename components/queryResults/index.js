@@ -26,7 +26,7 @@ export default function QueryResults({id}) {
             <tbody>
                     {logs.map(x => {
                         return (
-                            <tr key={x.rpi}>
+                            <tr key={x.date._seconds}>
                                 <td className='border border-green-600 text-center text-lg'>{x.rpi}</td>
                                 <td className='border border-green-600 text-center text-lg'>{new Date(x.date._seconds * 1000).toString()}</td>
                                 <td className='border border-green-600 text-center text-lg'>{x.arranca ? "Ha arrancado" : "No ha arrancado"}</td>
